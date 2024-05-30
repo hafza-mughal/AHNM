@@ -557,139 +557,319 @@ margin: 50px 20px;
 
 
 
-footer{
-    margin-top: 100px;
-    width: 100%;
- background-image: linear-gradient(rgba(7,49,60,0.7),rgba(7, 49, 60, 0.7)),url(WhatsApp\ Image\ 2024-05-28\ at\ 21.35.18_de8abeb1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
- text-align: center; 
- opacity: 98%;
- }
- 
- .gg{
-   display: flex;
-   flex-direction:column ;
-   justify-content: center;
-   align-items: center;
-  
- }
- 
-  .tt{
-   width: 75%;
-   height: 220px; 
- 
- }
- .tt h1{
-   color:black;
-   font-size: 48px;
- 
- }
- 
- .tt p{
-   padding-top: 18px;
-   line-height: 25px;
-   color:#fff;
- }
- .socialicons{
- width: 30%;
- height:70px;
- padding-top:15px ;
- }
- .socialicons a{
-   text-decoration: none;
-   padding:18px;
-   font-size: 35px;
- 
- }
- .socialicons a i{
-   color: #fff;
- }
- .socialicons a i:hover{
-   transform: translate(0, -20px);
- 
- 
- }
- .link{
-   width: 40%;
-   height: 80px;
- padding-top:25px;
- }
- 
- .link a{
- text-decoration: none;
- padding: 8px;
- margin: 10px;
- font-size: 20px;
- color: #fff;
+.customer-review{
+ font-size: 3rem;
  font-weight: bold;
- border: 2px solid black;
- border-radius:20px ;
+ display: flex;
+ justify-content: center;
+ gap: 2rem;
+ margin-top: 70px;
+
+}
+
+span{
+ color: #00555a;
+}
+.main-container{
+  display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+
+}
+
+.slider {
+
+
+ width: 77%;
+ overflow: hidden;
+ position: relative;
+ margin-bottom: 50px; 
+}
+
+.slide {
+ display: flex;
+ transition: transform 0.5s ease-in-out;
+}
+
+.card {
+
+max-width: 30%;
+ flex: 1 1 30%;
+ margin: 0 10px;
+ padding: 20px;
+ background:#98b7b9c5;
+ border-radius: 10px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ text-align: center;
+ height: 330px;
+}
+
+.card img {
+ width: 160px;
+ height: 160px;
+ border-radius: 50%;
+ margin-bottom: 10px;
+ object-fit: cover;
+}
+
+.indicators {
+ margin-top: 20px;
+}
+
+.indicator {
+ display: inline-block;
+ width: 10px;
+ height: 10px;
+ background-color: #bbb;
+ border-radius: 50%;
+ margin: 0 5px;
+ cursor: pointer;
+}
+
+.indicator.active {
+ background-color: #717171;
+}
+
+@media (max-width: 768px) {
+ .card {
+     flex: 1 1 45%;
  }
+}
+
+@media (max-width: 480px) {
+ .card {
+     flex: 1 1 90%;
+ }
+}
+
+/* Contact Section CSS */
+.total {
+ width: 100%;
+ padding: 50px 0;
+ background-color: #fff; 
+}
+.total h1{
+  font-size: 3rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
  
- .link a:hover{
- color: #000000;
+}
+
+.allcards {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+ align-items: center;
+ margin: 30px 60px 10px  60px ;
+
+}
+
+.box1, .box2, .box3 {
+ width: 25%;
+ height: 330px;
+ background-color: rgb(238, 237, 237);
+ box-shadow: 0 2px 4px rgba(93, 93, 93, 0.611);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ border-radius: 15px;
+
+ margin: 10px; 
+}
+
+.box1 a, .box2 a, .box3 a {
+ border: 2px solid;
+ padding: 10px;
+ border-color: teal;
+ border-radius: 50%;
+ font-size: 45px;
+}
+
+.box1 a i, .box2 a i, .box3 a i {
+ color: black;
+}
+
+.box1 h4, .box2 h4, .box3 h4 {
+ padding-top: 20px;
+ color: teal;
+ font-size: 25px;
+}
+
+.box1 .e1, .box1 .e2, .box2 p, .box3 p {
+ padding-top: 20px;
+ font-size: 20px;
+ text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+ .box1, .box2, .box3 {
+     width: 45%;
  }
+}
+
+@media (max-width: 767px) {
+ .allcards {
+     flex-direction: column;
+ }
+ .box1, .box2, .box3 {
+     width: 80%;
+     height: auto; /* Allow height to adjust based on content */
+ }
+ .box1 h4, .box2 h4, .box3 h4 {
+     font-size: 20px;
+ }
+ .box1 .e1, .box1 .e2, .box2 p, .box3 p {
+     font-size: 16px;
+ }
+}
+
+
+.footer {
+ background-color: #00555a;
+ color: white;
+ padding: 20px 0;
+ margin-top: 70px;
+}
+
+.footer-container {
+ max-width: 1200px;
+ margin-left: 5rem;
+ display: flex;
+ justify-content: center;
+ align-items: flex-start;
+ text-align: center;
+
+}
+
+.footer-section {
+ min-width: 250px;
+ padding: 10px;
+}
+
+.footer-section h2{
+ font-size: 38px;
+ margin-bottom: 10px;
+}
+.footer-section h2 span{
+ font-size:63px ;
+ color: white;
+}
+.footer-section h3{
+ font-size: 25px;
+ margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul{
+ line-height: 1.8;
+ font-size: 18px;
+ color: #e7e7e7;
  
- .copy{
-   border-top: 2px solid #fff;
-   
+}
+
+.footer-section ul{
+ list-style: none;
+ padding: 0;
+}
+
+.footer-section ul li a {
+ text-decoration: none;
+ color: white;
+ transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+color: #717171; 
+}
+
+.social-icons {
+ display: flex;
+
+}
+
+.social-icons a {
+ text-decoration: none;
+ color: white;
+ transition: transform 0.3s;
+}
+
+.social-icons a i{
+font-size: 35px;
+padding-left: 37px;
+margin-top: 12px;
+}
+
+.social-icons a:hover{
+ transform: scale(1.1);
+ color: #717171; 
+}
+
+.footer-bottom {
+ text-align: center;
+ padding: 10px 0;
+ border-top: 1px solid #e7e7e7;
+ margin-top: 20px;
+ font-size: 14px;
+ color: #e7e7e7;
+}
+
+
+
+
+
+
+
+
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 767px) {
+ .footer-container {
+     margin-left: 0;
+     flex-direction: column;
+     align-items: center;
+     padding: 0 20px; /* Added padding to avoid scrollbar */
  }
- .copy p{
-   color: #fff;
-   letter-spacing: 2px;
+
+ .footer-section {
+     min-width: 100%;
+     padding: 10px 0;
  }
- .copy p a{
-   color: #fff;
-   text-decoration: none;
+
+ .footer-section h2 {
+     font-size: 32px;
  }
- 
- 
- /* Responsive styling for screens 767px or less */
- @media (max-width: 767px) {
-   .tt {
-     width: 90%;
-     height: auto;
-   }
-   
-   .tt h1 {
-     font-size: 36px;
-   }
-   
-   .tt h1 span {
-     font-size: 50px;
-   }
-   
-   .socialicons {
-     width: 90%;
-     height: auto;
-     padding-top: 10px;
-   }
-   
-   .socialicons a {
-     padding: 10px;
-     font-size: 28px;
-   }
-   
-   .link {
-     width: 90%;
-     height: auto;
-     padding-top: 20px;
-   }
-   
-   .link a {
-     padding: 5px;
-     margin: 5px;
-     font-size: 18px;
-   }
-   .copy{
-     margin-top: 13px;
-   }
-   .copy p {
-     font-size: 14px;
+
+ .footer-section h2 span {
+     font-size: 48px;
  }
+
+ .footer-section h3 {
+     font-size: 22px;
  }
- 
+
+ .footer-section p,
+ .footer-section ul {
+     font-size: 16px;
+ }
+
+ .social-icons {
+     justify-content: center;
+     margin-top: 20px;
+ }
+
+ .social-icons a i {
+     font-size: 30px;
+     padding-left: 25px;
+     margin-top: 0;
+ }
+}
+
 
 
 
